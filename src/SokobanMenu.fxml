@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-image: url('file:src/front.png');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SokobanMenuController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-position: center; -fx-background-image: url('file:src/front.png');">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="892.0" minWidth="10.0" prefWidth="892.0" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="438.0" minWidth="10.0" prefWidth="188.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="292.0" minHeight="7.0" prefHeight="174.0" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="593.0" minHeight="10.0" prefHeight="426.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="start" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="120.0" text="Single Player">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                     <Button fx:id="multi" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="120.0" text="2 Player">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="info" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="120.0" text="Rules">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="music" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="120.0" text="Music">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="exit" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="120.0" text="Exit">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

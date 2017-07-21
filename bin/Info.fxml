@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-image: url('file:src/front2.png');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SokobanMenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0">
+         <image>
+            <Image url="@front2.png" />
+         </image>
+      </ImageView>
+      <GridPane prefHeight="600.0" prefWidth="900.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="508.0" minWidth="10.0" prefWidth="508.0" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="550.0" minWidth="10.0" prefWidth="508.0" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="676.0" minWidth="10.0" prefWidth="392.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="210.0" minHeight="0.0" prefHeight="210.0" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="400.0" minHeight="10.0" prefHeight="124.0" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="379.0" minHeight="0.0" prefHeight="133.0" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="379.0" minHeight="10.0" prefHeight="70.0" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="379.0" minHeight="10.0" prefHeight="161.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+
+            <VBox prefHeight="146.0" prefWidth="451.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <FlowPane prefHeight="102.0" prefWidth="398.0">
+                     <children>
+                     </children>
+                  </FlowPane>
+               </children>
+            </VBox>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#handleButtonAction" text="Back" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
