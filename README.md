@@ -7,4 +7,4 @@ A sokoban game that was built for COMP2911
 NOTE: you need JavaFX to run this
 
 # What I did
-Wrote almost the entirety of the backend - movement of the boxes and the players, the reset and undo options, move counter, general flow, and randmom level generation.
+Wrote almost the entirety of the backend - movement of the boxes and the players, the reset and undo options, move counter, general flow, and random level generation.
